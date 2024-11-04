@@ -1,7 +1,10 @@
-import type { NextConfig } from "next";
+// next.config.ts
+import { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    domains: ['public.blenderkit.com','encrypted-tbn0.gstatic.com'], // Specify allowed domains here
+  },
 };
 
 export default nextConfig;
